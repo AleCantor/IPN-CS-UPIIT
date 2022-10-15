@@ -3,7 +3,6 @@
 echo "Este script instala las herramientas, librerías y compiladores para trabajar con este repositorio"
 echo " "
 
-sudo apt update && sudo apt upgrade -y
 
 echo " "
 echo "Herramientas, debugger y compiladores: "
@@ -26,25 +25,25 @@ sudo apt install libgtk-4-1 libgtk-4-dev -y
 
 echo "Compilando aplicaciones de consola ..."
 
-cd ~/IPN-CS/08.-Consola/02.-Hanoi/
+cd ~/IPN-CS-UPIIT/08.-Consola/02.-Hanoi/
 
 gcc Hanoi.c -o hanoi
 
 sudo mv hanoi /usr/bin/
 
-cd ~/IPN-CS/08.-Consola/03.-Dona/
+cd ~/IPN-CS-UPIIT/08.-Consola/03.-Dona/
 
 gcc Dona.c -o dona -lm
 
 sudo mv dona /usr/bin
 
-cd ~/IPN-CS/08.-Consola/04.-Snake/
+cd ~/IPN-CS-UPIIT/08.-Consola/04.-Snake/
 
 gcc Snake.c -o snake -lncurses
 
 sudo mv snake /usr/bin
 
-cd ~/IPN-CS/08.-Consola/05.-Matrix/
+cd ~/IPN-CS-UPIIT/08.-Consola/05.-Matrix/
 
 make
 
